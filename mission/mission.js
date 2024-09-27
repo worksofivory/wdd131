@@ -7,12 +7,12 @@ function changeTheme() {
 const selectValue = themeSelector.value;
 if (selectValue == 'dark')
 {
-    body.classList.add('dark');
+    document.body.classList.add('dark');
     document.querySelector('img').src = "byui-logo_white.png";
 }
 else if (selectValue == 'light'){
-    body.classList.remove('dark');
-    document.querySelector('img').src = "byui-logo_blue.webp";
+    document.body.classList.remove('dark');
+    document.querySelector('#logo').src = "byui-logo_blue.webp";
 }
 // if the value is dark then:
 // add the dark class to the body

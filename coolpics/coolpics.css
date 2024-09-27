@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+.hide{
+    display: none;
+}
+body{
+    font-family:var(--primary-font);
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+header,
+main,
+footer{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+.viewer{
+    position:fixed;
+    margin: 0 auto;
+    max-height:100%;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0, 0.75);
+    display:grid;
+}
+.viewer img{
+    max-width: 100%;
+}
+.close-viewer{
+    text-decoration: none;
+    text-align: right;
+    background-color: rgba(0,0,0,0);
+    color:white;
+    font-size: 1.2em;
+    border:none;
+}
+header{
+    background-color: var(--primary-color);
+    color:var(--text-light);
+}
+#menu-button{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-light);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+header ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+}
+li{
+    text-decoration: underline;
+}
+header h1{
+    font-size: 2.5em;
+}
+main{
+    color:var(--text-dark);
+    font-family: var(--secondary-font);
+}
+figure img{
+    max-width: 100%;
+    border:20px solid white;
+    box-shadow: 5px 5px 10px black;  
+}
+footer{
+    background-color: var(--primary-color);
+    color:var(--text-light);
+}
+@media screen and (min-width:700px){
+    header,
+    footer{
+        max-width: 100%;
+    }
+    .gallery{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:1000px){
+    li{
+        display: inline;
+        padding: 0px 3em;
+        font-size: 1.1em;
+    }
+    main{
+        max-width: 100%;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .viewer{
+        padding: 50px;
+        padding-top: 0;
+        max-width: 80%;
+    }
+}
