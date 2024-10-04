@@ -1,0 +1,70 @@
+body{
+    margin: 0 auto;
+    font-size: 1.3em;
+    max-width: 1000px;
+}
+header{ 
+    text-align: center;
+}
+header h1{
+    padding:30px;
+}
+.main-nav{
+    text-align: right;
+    list-style-type: none;
+    border-top: 1px solid rgb(205, 205, 115);
+    border-bottom: 1px solid rgb(205, 205, 115);
+    padding: 20px;
+}
+.main-nav li{
+    display:inline;
+}
+li a{
+    text-decoration: none;
+    color:rgb(166, 54, 54);
+    word-spacing: 10px;
+}
+main{
+    display:grid;
+    grid-template-columns: 80% 20%;
+}
+#filter{
+    border:1px solid rgb(205, 205, 115);
+}
+#booklist article{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom:20px;
+    align-self:center;
+}
+.basic-info{
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 10px;
+    padding-top:10px;
+    border-right:1px solid rgb(205, 205, 115);
+}
+.main-info{
+    display:grid;
+    grid-template-columns: 1fr;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.main-info h1{
+    color:rgb(166, 54, 54);
+}
+.main-info img{
+    justify-self: center;
+}
+.skiptocontent a{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+.skiptocontent a:focus{
+    left: 20px;
+    width: auto;
+    height: auto;
+}
