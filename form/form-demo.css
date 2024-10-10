@@ -1,0 +1,56 @@
+/* form-demo.css */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact{
+    font-size: 1.8em;
+  }
+  .contact input, 
+  .contact select, 
+  .contact textarea{
+    width:100%;
+    margin-bottom: 1em;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .contact #address{
+    padding: 1.5rem;
+  }
+  .contact button{
+    background-color: rgb(37, 255, 37);
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    font-size: 1.5rem;
+    border:0;
+    border-radius: 10px;
+  }
+  .errors > p {
+    border: 1px solid red;
+    padding: 0.5em;
+  }
+  /* Style the select arrow for Safari */
+  select::-webkit-inner-spin-button,
+  select::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Style the select arrow for other browsers */
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .hide {
+    display: none; /* Initially hide the credit card input and label */
+  }
