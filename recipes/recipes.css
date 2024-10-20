@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC";
+}
+img {
+	max-width: 100%;
+}
+header{
+    max-width: 1000px;
+    margin:0 auto;
+    display:flex;
+    font-family: var(--primary-font);
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width:200px;
+}
+header h1{
+    width:200px;
+}
+form{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+form input{
+    width:80%;
+    font-size: 1.5em;
+}
+form button{
+    width:5%;
+}
+.search-container{
+    padding: 30px;
+    border-bottom: 3px solid grey;
+}
+.recipeBox{
+    margin:0 auto;
+}
+.recipe{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    border:1px solid black;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.recipe img{
+    width:100%;
+}
+figcaption{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+figcaption ul{
+    padding:0;
+}
+figcaption li{
+    display:inline;
+    border:1px solid black;
+    padding: 5px;
+    font-size: 1.5em;
+}
+figcaption a{
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-size: 1.5em;
+}
+.icon-star{
+    word-spacing:0;
+}
+footer{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    max-width: 50%;
+    margin:0 auto;
+}
+footer a{
+    width:100%;
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+.social{
+    width:100%;
+    padding:10px;
+}
+.social img{
+    width:20%;
+}
+@media screen and (min-width:800px){
+    #logo{
+        padding-left:25%;
+    }
+    header h1{
+        padding-right:25%;
+    }
+    form button{
+        width:4%;
+    }
+    .recipe{
+        flex-flow: row wrap;
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .recipe img{
+        width:50%;
+    }
+    figcaption{
+        width:40%;
+        padding:10px;
+    }
+    footer{
+        flex-flow:row;
+    }
+}
