@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description" content="WorksOfIvory's art portfolio, containing cartoons, and anthro characters"/>
+    <meta 
+    name="author" content="Will Johns"/>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="art.js" type="module"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class = "nav_image" href="index.html">
+                <img class="headerlogo" src="images/transparentlogo.png" alt="home" width="200px">
+            </a>
+            <a class = "nav_link" href="gallery.html">The Gallery</a>
+            <a class = "nav_link" href="studio.html">The Studio</a>
+        </nav>
+    </header>
+    <img class="galleryimg" src="images/gallery.jpg" alt="gallery image">
+    <div class="gallerymessage">
+        <h1>The Gallery</h1>
+        <p>Here are some of what I feel are my best pieces of art.  Some are from several years ago, while others are more recent.  I spent a long time on many of these, averaging about 5 hours of work, the shortest taking around 3, and the longest taking upwards of 6 hours to complete.  All of the digital pieces were made with Clip Studio Paint Pro.</p>
+    </div>
+    <content>
+        <details class="filters">
+            <summary>Filter by Category:</summary>
+            <form id="filterForm">
+                <label>
+                    <input type="checkbox" name="category" value="scifi"> Sci-Fi
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="individual"> Individual Characters
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="group"> Group Pictures
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="background"> Background
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="fantasy"> Fantasy
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="modern"> Modern
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="human"> Human
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="anthro"> Anthro
+                </label>
+            </form>
+        </details>
+        <section id="gallery">
+
+        </section>
+    </content>
+    <footer>
+        <a href="index.html">
+            <img id="footercharacter" src="images/ivysitting.png" alt="small cartoon wolf character">
+        </a>
+        <p>Works of Ivory - 2024</p>
+        <!-- Link is a placeholder until I add my twitter account link -->
+        <div class="socials">
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
