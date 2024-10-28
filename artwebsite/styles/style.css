@@ -15,14 +15,19 @@ body{
     display:flex;
     z-index: 10;
     flex-flow:column wrap;
+    justify-content: center;
 }
 .viewer img{
     max-width: 90%;
     max-height:95%;
     margin:0 auto;
-    flex-shrink: 1;
-    flex-grow:1;
+    align-self: center;
+
 }
+.viewer img{
+    animation-name: zoom;
+    animation-duration: 0.2s;
+  }
 .close-viewer{
     text-decoration: none;
     text-align: right;
@@ -357,3 +362,7 @@ footer p{
         transform:scale(1.05)
     }
 }
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
